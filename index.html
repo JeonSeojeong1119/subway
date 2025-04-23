@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>어디서 내리세요?</title>
+	<style type="text/css">
+		@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal}
+		@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal}
+    	*{margin: 0px; padding: 0px}
+		html{font-family: 'Pretendard-Regular'}
+		nav{background: #00E868; width: 100%; font-size:20px; padding-top: 20px; padding-bottom: 20px; z-index: 1000}
+		h2{font-family: 'Pretendard-ExtraBold'; font-size: 130px; text-align:center;}
+		h3{font-family: 'Pretendard-ExtraBold'; font-size: 60px; text-align:center}
+		h4{font-family: 'Pretendard-ExtraBold'; font-size: 40px; text-align:center; padding-top: 50px; padding-bottom: 50px}
+		p{font-size: 20px; line-height:1.75}
+		button {background: rgba(0, 0, 0, 0.3); color: white; border: none; padding: 10px 20px; font-size: 1.2rem; cursor: pointer; border-radius: 20px}
+		.nav-container{width: 900px; display:flex; justify-content: space-between; margin: auto}
+		.nav-left a, .nav-right a{text-decoration: none}
+		.nav-right{display: flex; gap: 30px}
+		.wrap{width: 900px; margin: auto}
+		.flex{display: flex; gap: 30px}
+		.fixed{position: fixed; top: 0px}
+		.slide-wrapper{position: relative; overflow: hidden}
+		.slider{display: flex; gap : 50px; width: calc(800px * 3)}
+		.slider section{width: 800px; flex-shrink: 0; background: white; padding: 50px; border-radius: 15px}
+		.controls {position: absolute; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); padding: 0 20px;}
+		.green{color: #00E868}
+		.white{color: white}
+		.bg-green{background-color: #00E868}
+		.bg-grey{background-color: #F5F5F5}
+	</style>
+</head>
+<body>
+	<nav class="fixed">
+		<div class="nav-container">
+			<div class="nav-left">
+				<a href="#s1" style="font-family: 'Pretendard-ExtraBold'; display: inline-block; color: white; padding-top: 4px">어디서 내리세요?</a>
+			</div>
+			<div class="nav-right">
+				<a href="#s2" style="color: white; padding-top: 4px">후기</a>
+				<a href="#s3" style="display: outline-block; padding : 3px 10px; border-radius: 20px; background: white; color: #00E868">다운로드</a>
+			</div>
+		</div>
+	</nav>
+	<section id="s1" style="position: relative; padding-top: 200px; padding-bottom: 200px">
+		<div class="wrap" style="position: relative">
+			<img src="1.handle.png" style="position : absolute; top: -15%; left: 25%; max-width: 50%; height: auto">
+			<h2 class="green">지하철 손잡이를 잡으면 드는 생각</h2>
+		</div>
+	</section>
+	<section class="bg-green" style="padding-top: 200px; padding-bottom: 200px">
+		<div class="wrap">
+			<h2 class="white">내 앞에 앉은 사람 어디서 내릴까?</h2>
+		</div>
+	</section>
+	<section class="bg-grey" style="padding-top: 200px; padding-bottom: 200px">
+		<div class="wrap">
+			<h2>물어보고 싶지만 용기는 없을 때</h2>
+		</div>
+	</section>
+	<div class="wrap">
+		<div class="flex" style="padding-top: 200px; padding-bottom: 100px">
+			<section>
+				<h3>직장인</h3>
+				<img src="2.businessman.png" style="max-width: 300px; height: auto">
+			</section>
+			<section>
+				<h3>아티스트</h3>
+				<img src="3.artist.png" style="max-width: 300px; height: auto">
+			</section>
+			<section>
+				<h3>대학생</h3>
+				<img src="4.student.png" style="max-width: 300px; height: auto">
+			</section>
+		</div>
+	</div>
+	<section>
+		<div class="wrap" style="padding-bottom: 200px">
+			<h3 class="green">매일 지하철을 타는 모두의 필수 어플!</h3>
+		</div>
+	</section>
+	<section style="background-image: url('7.nfc.png'); background-size: cover">
+		<div class="wrap" style="padding-top: 0px; padding-bottom: 500px">
+			<h3 class="green">최첨단?<br>뉴런 NFC 시스템 적용</h3>
+		</div>
+	</section>
+	<section class="bg-green" style="padding-top: 300px; padding-bottom: 300px">
+		<h2 class="white">어디서 내리세요?</h2>
+	</section>
+	<section style="background-image: url('5.app.png'); background-size: 800px; background-position: center; background-repeat: no-repeat; background-attachment: fixed">
+		<div class="wrap">
+			<h4 class="green">step.1</h4>
+			<h2>어플을 실행하고</h2>
+			<img src="6.touch.png" style="width: 500px; display: block; margin-left:280px">
+		</div>
+	</section>
+	<section style="background-image: url('8.people.png'); background-size: cover">
+		<div class="wrap" style="padding-bottom: 600px">
+			<h4 class="green">step.2</h4>
+			<h3 class="green">핸드폰에 몰두한 척</h3>
+			<h2 class="green">앞에 앉은 사람의 머리에 태그하면</h2>
+		</div>
+	</section>
+	<section style="background-image: url('10.brain.png'); background-size: cover">
+		<div class="wrap">
+			<h4 class="white" style="padding-bottom: 400px">step.3</h4>
+			<h3 style="padding-bottom: 600px">상대방의 뉴런에 접속</h3>
+		</div>
+	</section>
+	<section style="background-image: url('11.tag.png'); background-size: 1000px; background-position: center; background-repeat: no-repeat">
+		<div class="wrap" style="padding-bottom: 100px;">
+			<h4 class="green" style="padding-bottom: 700px">step.4</h4>
+			<h3>화면에 하차역이 표시됩니다</h3>
+		</div>
+	</section>
+	<section id="s2" class="bg-grey">
+		<div class="wrap" style="padding-top:200px; padding-bottom: 200px">
+			<h3 style="padding-bottom: 50px">"덕분에 매일 편하게 출근해요!"</h3>
+			<h3 style="padding-bottom: 50px">"이제 자리를 얻기 위한<br>공연이 필요없어요"</h3>
+			<h3 style="padding-bottom: 50px">"삶의 무게는 덜 수 없지만<br>책가방의 무게는 덜었어요"</h3>
+			<h3 class="green" style="padding-bottom: 50px">후기들이 증명하는 현대인의 필수 어플</h3>
+			<div class="slide-wrapper">
+				<div class="slider" id="slider">
+					<section>
+						<p>매일 아침 지하철에서 자리 경쟁에 시달리던 직장인입니다. "어디서 내리세요?" 덕분에 눈치 싸움은 끝났어요. NFC로 앞 사람의 하차역을 알 수 있으니, 굳이 눈치 보며 서있을 필요도 없고요. 오늘 아침 어떤분이 제 머리에 태그하려는 것 같길래 슬며시 머리를 대드렸어요.</p>
+					</section>
+					<section>
+						<p>매일같이 지하철에서 자리 하나 차지하려 온갖 퍼포먼스를 벌였어요. 그런데 이 	어플을 쓰고나선... 말 그대로 신세계에요. 조용히 태그 한번이면 자리 예측을 할 수 있으니까 인터넷 유명인이 될 걱정도 없어요!</p>
+					</section>
+					<section>
+						<p>수업 다섯 개, 팀플 두 개, 과제는 셀 수 없이 많죠. 하루의 대부분을 지하철에서 보내는 대학생으로서, 이 앱은 제 삶을 바꿔줬어요. 삶의 무게는 덜 수 없지만 책가방의 무게는 덜었어요!</p>
+					</section>
+				</div>
+				<div class="controls">
+					<button onclick="moveSlide(-1)"><</button>
+					<button onclick="moveSlide(1)">></button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="s3" class="bg-green" style="background-image: url('11.subway.png'); background-size: cover;  padding-top: 500px; padding-bottom: 100px">
+		<div class="wrap" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(30px); border-radius: 20px">
+			<div class="flex" style="padding: 50px">
+				<section>
+					<h3 class="bg-green green" style="border-radius: 10px;">아.</h3>
+				</section>
+				<section>
+					<h3 class="white">어디서 내리세요?</h3>
+				</section>
+				<section>
+					<p style="color: green; background: white; display: outline-block; padding : 3px 10px; border-radius: 20px; margin-top: 15px">다운로드</p>
+				</section>
+			</div>
+		</div>
+	</section>
+	<footer class="bg-grey">
+		<div class="wrap" style="padding-top:50px; padding-bottom: 50px; color: rgba(0, 0, 0, 0.5)">
+   			<p>© 2025 어디서내리세요? 모든 권리 보유</p>
+    		<p>어플의 과도한 사용으로 역무원에게 제제를 당하거나 불이익을 얻을 경우 책임지지 않습니다.</p>
+   			<p>이용약관 | 개인정보 처리방침 | 문의하기</p>
+   			<p>어디서내리세요? 유한회사 | 대표이사:전서정 | 주소: 서울특별시 노원구 공릉로 232 | 전화 : 000-0000-0000 | 사업자등록번호: 000-00-00000 | 사업자정보
+			</div>
+	</footer>
+	<script>
+	let currentSlide = 0;
+	const slider = document.getElementById("slider");
+	const slides = slider.querySelectorAll("section");
+
+	function moveSlide(direction) {
+		const totalSlides = slides.length;
+		currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+		slider.style.transform = `translateX(-${currentSlide * 800}px)`;
+		slider.style.transition = "transform 0.5s ease-in-out";
+	}
+</script>
+</body>
+</html>
